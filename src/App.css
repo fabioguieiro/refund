@@ -1,7 +1,12 @@
 .App {
-
-  min-height: 100vh;
-
-
+  height: 100vh;
 }
 
+.gradient-bg {
+  background: rgb(0, 215, 206);
+  background: linear-gradient(
+    130deg,
+    rgba(0, 215, 206, 1) 0%,
+    rgba(0, 197, 252, 1) 35%
+  );
+}
