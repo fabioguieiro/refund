@@ -81,43 +81,43 @@ export function Sidebar(props) {
                 <div className="w-full">
                   <p className="mb-2">Descrição</p>
                   <div className="w-full flex justify-between">
-                  <p className="font-bold font-nunito text-deepgreen text-sm">
+                    <p className="font-bold font-nunito text-deepgreen text-sm">
                       Despesas declaradas
-                  </p>
-                  <p className="font-bold font-nunito text-deepgreen text-sm">
-                  {` ${item.declared.toLocaleString("pt-BR", {
+                    </p>
+                    <p className="font-bold font-nunito text-deepgreen text-sm">
+                      {` ${item.declared.toLocaleString("pt-BR", {
                         style: "currency",
                         currency: item.currency.code,
                       })}`}
-                  </p>
+                    </p>
                   </div>
                   <p className="font-semibold font-nunito text-coolgray text-xs">
                     Despesas declaradas pelo trooper
                   </p>
                   <div className="w-full flex justify-between">
-                  <p className="font-bold font-nunito text-deepgreen text-sm">
-                    Despesas Aprovadas
-                  </p>
-                  <p className="font-bold font-nunito text-deepgreen text-sm">
-                  {` ${item.approved.toLocaleString("pt-BR", {
+                    <p className="font-bold font-nunito text-deepgreen text-sm">
+                      Despesas Aprovadas
+                    </p>
+                    <p className="font-bold font-nunito text-deepgreen text-sm">
+                      {` ${item.approved.toLocaleString("pt-BR", {
                         style: "currency",
                         currency: item.currency.code,
                       })}`}
-                  </p>
+                    </p>
                   </div>
                   <p className="font-semibold font-nunito text-coolgray text-xs">
                     Despesas Aprovadas pelo financeiro
                   </p>
                   <div className="w-full flex justify-between">
-                  <p className="font-bold font-nunito text-deepgreen text-sm">
-                    Pagamento realizado
-                  </p>
-                  <p className="font-bold font-nunito text-nicegreen text-sm">
-                  {` ${item.received.toLocaleString("pt-BR", {
+                    <p className="font-bold font-nunito text-deepgreen text-sm">
+                      Pagamento realizado
+                    </p>
+                    <p className="font-bold font-nunito text-nicegreen text-sm">
+                      {` ${item.received.toLocaleString("pt-BR", {
                         style: "currency",
                         currency: item.currency.code,
                       })}`}
-                  </p>
+                    </p>
                   </div>
                   <p className="font-semibold font-nunito text-coolgray text-xs">
                     Pegamento realizado pelo financeiro
