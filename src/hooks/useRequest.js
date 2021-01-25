@@ -1,6 +1,6 @@
-import instance from "../axios-order";
+import instance from "../lib/utils/axios-order";
 
-export async function useRequest(endpoint, setData) {
+export async function useRequest(endpoint) {
   const result = await instance(
     endpoint,
   );

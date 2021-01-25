@@ -3,7 +3,7 @@ import { ArrowDownIcon } from "../components/Icons/ArrowDownIcon";
 export function Sidebar(props) {
   console.log(props, "side");
   return (
-    <div className="bg-white ml-4 w-1/4 h-full">
+    <aside className="bg-white ml-4 w-1/4 h-full">
       <div className="flex flex-col items-center mt-8">
         {props.sidebar.content[0].accountabilityStatus === "OPEN" ? (
           <div className="bg-openstatusglightray border border-openstatusgdarktray w-11/12 h-20 rounded-lg flex flex-col items-center justify-center">
@@ -128,6 +128,6 @@ export function Sidebar(props) {
           );
         })}
       </div>
-    </div>
+    </aside>
   );
 }

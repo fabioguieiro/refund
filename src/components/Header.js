@@ -3,9 +3,9 @@ import { timestamp_to_date } from "../lib/utils/timestamp_to_date";
 export function Header(props) {
   console.log(props, "header");
   return (
-    <div className="mt-2 h-60 gradient-bg rounded-lg text-white pt-4 pl-4">
+    <header className="mt-2 h-60 gradient-bg rounded-lg text-white pt-4 pl-4">
       <p className="text-3xl font-nunito font-semibold">
-        Reembolso #{props.header.id} - {props.header.justification}
+        Reembolso #{props.content.id} - {props.content.justification}
       </p>
       <div className="flex">
         <div className="flex w-1/2">
@@ -23,20 +23,20 @@ export function Header(props) {
             </div>
           </div>
           <div className="mt-2 ml-6">
-            <p className="font-nunito ">{props.header.collaborator.name} </p>
-            <p className="font-nunito ">{props.header.collaborator.email}</p>
-            <p className="font-nunito ">{props.header.purpose === 'FRATERNIZATION' ? 'Fraternização': ''}</p> 
-            <p className="font-nunito ">{props.header.project.title}</p>
+            <p className="font-nunito ">{props.content.collaborator.name} </p>
+            <p className="font-nunito ">{props.content.collaborator.email}</p>
+            <p className="font-nunito ">{props.content.purpose === 'FRATERNIZATION' ? 'Fraternização': ''}</p> 
+            <p className="font-nunito ">{props.content.project.title}</p>
             <p className="font-nunito ">
               {timestamp_to_date(
-                props.header.accountabilityExtraInfo.eventDate
+                props.content.accountabilityExtraInfo.eventDate
               )}
             </p>
             <p className="font-nunito ">
-              {props.header.accountabilityExtraInfo.amountOfPeople} {props.header.accountabilityExtraInfo.amountOfPeople > 1 ? 'pessoas' : 'pessoa'}
+              {props.content.accountabilityExtraInfo.amountOfPeople} {props.content.accountabilityExtraInfo.amountOfPeople > 1 ? 'pessoas' : 'pessoa'}
             </p>
             <p className="font-nunito ">
-              {props.header.accountabilityExtraInfo.budgetForBreakfast
+              {props.content.accountabilityExtraInfo.budgetForBreakfast
                 ? "sim"
                 : "não"}
             </p>
@@ -54,14 +54,14 @@ export function Header(props) {
           </div>
           <div>
             <p className="font-thin">Centro de custo</p>
-            {props.header.costCenters
-              ? props.header.costCenters.map((item) => {
+            {props.content.costCenters
+              ? props.content.costCenters.map((item) => {
                   return <p className="text-white font-semibold">{item.percentage}% - {item.name}</p>;
                 })
               : null}
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
