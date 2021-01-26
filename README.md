@@ -1,7 +1,7 @@
 # Hotmart Refund 
 
 
-![](https://logospng.org/download/hotmart/logo-hotmart-icone-1024.png)
+![](https://logospng.org/download/hotmart/logo-hotmart-icone-256.png)
 
  Um sistema para submissão e administração de reembolsos. 
 
