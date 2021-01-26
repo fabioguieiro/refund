@@ -12,7 +12,7 @@ export function Timeline(props) {
           return (
             <li
               key={item.id}
-              className="my-2 rounded-md w-full bg-white text-black px-6 py-4 flex"
+              className="my-2 rounded-md w-full bg-white text-black px-6 py-4 flex shadow-md"
             >
               <div className="mx-8 flex flex-col justify-center items-center w-10">
                 <div className="h-12 flex justify-center items-center w-12 p-3 rounded-full bg-iconbg mb-2">

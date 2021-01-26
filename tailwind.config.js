@@ -21,7 +21,8 @@ module.exports = {
         concludeddarkgreen: "#009d43",
         concludedlightgreen: "#edfff5",
         coolgray: "#9ea4ac",
-        currencygray: "#32363b"
+        currencygray: "#32363b",
+        savecian: "#51c1c3"
         
       },
     },
